@@ -1,0 +1,32 @@
+li {
+    display: inline;
+    padding: 12px;
+    border: 5px solid;
+    font-size: 20px;
+    background-color: #081f5c;
+    margin: 10px;
+    width:150px;
+    border: radius 25px;
+}
+
+li a {
+    color: #ffffff;
+}
+
+#nav_menu ul {
+    list-style: none;
+    position: realative;
+#nav_menu ul li { float: left;}
+#nav_menu ul li {
+    display:none;
+    position:absolute;
+    top:100%;
+}
+#nav_menu ul ul li {float: none;}
+#nav_menu ul li:hover > ul {
+    display: block; }
+nav_menu > ul::after {
+    content: "";
+    display: block;
+    clear: both;}
+}
