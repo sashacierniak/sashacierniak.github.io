@@ -2,7 +2,7 @@ h1 {
      color:#4682B4;
 }
 
-.styled-link {
+a {
      padding: 5px;
      background-color: #BAD6EB;
      border: 7px solid #081F5C;
