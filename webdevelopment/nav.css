@@ -13,20 +13,40 @@ li a {
     color: #ffffff;
 }
 
-#nav_menu ul {
-    list-style: none;
-    position: realative;
-#nav_menu ul li { float: left;}
-#nav_menu ul li {
-    display:none;
-    position:absolute;
-    top:100%;
-}
-#nav_menu ul ul li {float: none;}
-#nav_menu ul li:hover > ul {
-    display: block; }
-nav_menu > ul::after {
-    content: "";
+body {
+    font-family: Perpetua, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    display: flex;
+    background-color: #081F5C;
+    color: white;
+  }
+  .navbar li {
+  	display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+  .navbar > li {
+    padding: 20px 20px;
+    position: relative;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #BAD6EB;
+    width: 200px;
+
+  }
+  .dropdown li {
+    padding: 10px;
+  }
+  .navbar li:hover .dropdown {
     display: block;
-    clear: both;}
-}
+  }
