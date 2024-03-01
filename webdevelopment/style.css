@@ -3,7 +3,9 @@ h1 {
 }
 
 .styled-link {
-     padding: 10px;
+     padding: 5px;
      background-color: #BAD6EB;
-     border: 2px solid #081F5C;
+     border: 7px solid #081F5C;
+
+
 }
