@@ -2,5 +2,8 @@ h1 {
      color:#4682B4;
 }
 
-.styled-link {border:5px solid red;
+.styled-link {
+     padding: 10px;
+     background-color: #007bff;
+     border: 2px solid 007bff;
 }
