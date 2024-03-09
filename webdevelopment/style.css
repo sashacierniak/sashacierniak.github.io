@@ -1,29 +1,32 @@
 h1 {
      color:#4682B4;
 }
-
 .styled-link {
      padding: 5px;
      background-color: #BAD6EB;
      border: 7px solid #081F5C;
 
 }
-
 main p:first-of-type::first-letter {
      font-size: 150%; 
      color: #081F5C; 
  }
-
 
  main p:not(:first-of-type)::before{
      content:"";
      display: inline-block;
      width: 20px;
  }
- body {
+ main {
      margin: 20px;
      padding: 5px;
      width: 1350px;
      border: 0px;
 
+ }
+ footer{
+     margin: 15px;
+     padding: 5px;
+     width: 1350px;
+     border: 0px;
  }
