@@ -20,7 +20,7 @@ main p:first-of-type::first-letter {
      display: inline-block;
      width: 20px;
  }
- main {
+ body {
      margin: 20px;
      padding: 5px;
      width: 1350px;
