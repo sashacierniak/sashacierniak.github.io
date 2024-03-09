@@ -6,7 +6,7 @@ li {
     background-color: #081f5c;
     margin: 10px;
     width:125px;
-    border: radius 5px;
+    border: radius 5px; 
 }
 
 li a {
@@ -57,3 +57,6 @@ body {
   .dropdown li {
     padding: 0px;
   }
+  
+  
+
