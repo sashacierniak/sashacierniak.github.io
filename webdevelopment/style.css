@@ -31,11 +31,6 @@ main p:first-of-type::first-letter {
      border: 0px;
  }
 
- * {
-     box-sizing: border-box;
-     margin: 25px;
-     padding: 20px;
- }
 .container {
      display:flex;
 }
