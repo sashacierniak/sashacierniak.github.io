@@ -26,7 +26,7 @@ main p:first-of-type::first-letter {
  }
  footer {
      margin: 15px;
-     padding: 5px;
+     padding: 15px;
      width: 1350px;
      border: 0px;
  }
