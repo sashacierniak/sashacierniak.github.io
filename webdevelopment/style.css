@@ -68,9 +68,9 @@ body,html{
      height:100%
 }
  .right-section{
-     flex:1;
+     flex: 0.75;;
      background-color:#BAD6EB;
-     padding: 20px;
+     padding: 0px;
      display: flex;
      flex-direction:column;
      width:100%;
