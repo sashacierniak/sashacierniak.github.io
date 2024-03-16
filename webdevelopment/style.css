@@ -49,6 +49,7 @@ body {
 
    .container {
      display: grid;
+     grid-template-rows: auto 1fr auto;
      grid-template-columns: 1fr 10px 1fr; 
      min-height: 100vh;
    }
