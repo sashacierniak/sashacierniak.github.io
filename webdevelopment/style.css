@@ -74,21 +74,12 @@ body {
    .right-column{
      background-color:#BAD6EB;
      padding: 20px;
-      }
+}
 
-   @media screen and (max-width: 768px) {
-     main {
-       grid-template-columns: 1fr;
-     }
-
-     .left-column, .right-column {
-       grid-row: 1 / -1;
-     }
-   }
 
    .resume-text{
     text-align: center;
-    padding: 20px;
+    padding: 75px;
 }
 .image-box{
     flex: 1;
@@ -96,4 +87,10 @@ body {
     align-items: center;
     display: flex;
     padding: 20px;
+}
+
+.quote{
+     text-align:center;
+     padding: 20px;
+
 }
