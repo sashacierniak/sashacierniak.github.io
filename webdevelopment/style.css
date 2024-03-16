@@ -50,6 +50,7 @@ body {
      display: grid;
      grid-template-rows: auto 1fr auto;
      min-height: 100vh;
+     gap: 20px;
    }
 
    header, footer {
@@ -60,7 +61,7 @@ body {
 
    main {
      display: grid;
-     grid-template-rows: 1fr 1fr;
+     grid-template-columns: 1fr 1fr;
      grid-gap: 20px; 
      padding: 20px; 
      min-height: calc(100vh - 2 * 20px); 
@@ -69,14 +70,18 @@ body {
    .left-column{
      background-color: #ffffff;
      padding: 20px; 
+     height:100%;
    }
    
    .right-column{
      background-color:#BAD6EB;
      padding: 20px;
+     height: 100%;
 }
 
-
+     .right-column, .left-column{
+          grid-column: 1/-1;
+     }
    .resume-text{
     text-align: center;
     padding: 75px;
