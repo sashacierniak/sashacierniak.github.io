@@ -18,6 +18,7 @@ main p:first-of-type::first-letter {
      width: 20px;
  }
  main {
+     display: flex;
      margin: 20px;
      padding: 20px;
      width: 100%;
@@ -25,6 +26,7 @@ main p:first-of-type::first-letter {
 
  }
  footer {
+     display: flex;
      margin-top: 20px;
      padding: 20px;
      width: 100%;
