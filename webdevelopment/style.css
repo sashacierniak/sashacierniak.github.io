@@ -84,12 +84,6 @@ body {
      padding: 20px;
    }
 
-   /* Responsive layout */
-   @media screen and (max-width: 1000px) {
-     .container {
-       grid-template-columns: 1fr;
-     }
-}
 
      header,
      footer {
