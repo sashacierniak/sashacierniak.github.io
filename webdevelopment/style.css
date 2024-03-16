@@ -49,56 +49,78 @@ main p:first-of-type::first-letter {
 
 }
 
-body,html{
+body {
      margin: 0;
      padding: 0;
-     height: 100%;
-     overflow-x: hidden;
+     box-sizing: border-box;
+   }
 
-}
-
-.container {
+   .container {
      display: grid;
-     grid-template-columns: 1fr, 1fr;
      grid-template-rows: auto 1fr auto;
-     height: 100%;
-}
- .right-section{
-    background-color:#BAD6EB;
-    padding: 20px;
- }
+     grid-template-columns: 1fr 10px 1fr; 
+     min-height: 100vh;
+   }
 
- .left-section{
-     background-color: #ffffff;
+   header {
+     grid-column: 1 / -1;
+     background-color: #081F5C;
+     color: white;
      padding: 20px;
- }
+   }
 
-.image-box{
-     flex: 1;
-     justify-content: center;
-     align-items: center;
-     display: flex;
- }
-.image-box img{
-     max-width: 100%;
-     max-height: 25%;
-}
-.resume-text{
-     text-align: center;
-     padding: 25px;
-}
-.blue-bar{
-     height: 45px;
-     background-color: #061026;
-     grid-column: 1/ span 2;
-
-}
-.footer{
-     grid-column: 1 /span 2;
-     background-color: #061026;
-     padding: 10px;
-     text-align: center;
-     color: #ffffff;
+   main {
      display: grid;
+     grid-template-columns: 1fr 10px 1fr; 
+     padding: 20px;
+   }
+
+   footer {
+     grid-column: 1 / -1;
+     background-color: #081F5C;
+     color: white;
+     padding: 20px;
+   }
+
+   .left-column {
+     background-color: #f0f0f0;
+     padding: 20px;
+   }
+
+   .right-column {
+     background-color: #BAD6EB;
+     padding: 20px;
+   }
+
+   /* Responsive layout */
+   @media screen and (max-width: 1000px) {
+     .container {
+       grid-template-columns: 1fr;
+     }
 }
 
+     header,
+     footer {
+       grid-column: 1 / -1;
+     }
+
+     .left-column,
+     .right-column {
+       grid-column: 1 / -1;
+     }
+
+     main {
+       grid-template-columns: 1fr;
+     }
+   
+   .resume-text{
+    text-align: center;
+    padding: 20px;
+}
+.image-box{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
