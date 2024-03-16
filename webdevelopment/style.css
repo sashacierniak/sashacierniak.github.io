@@ -40,7 +40,6 @@ main p:first-of-type::first-letter {
      height:450px;
 
 }
-
 body {
      margin: 0;
      padding: 0;
@@ -50,12 +49,10 @@ body {
    .container {
      display: grid;
      grid-template-rows: auto 1fr auto;
-     grid-template-columns: 1fr 10px 1fr; 
      min-height: 100vh;
    }
 
-   header {
-     grid-column: 1 / -1;
+   header, footer {
      background-color: #061026;
      color: white;
      padding: 20px;
@@ -63,42 +60,32 @@ body {
 
    main {
      display: grid;
-     grid-template-columns: 1fr 10px 1fr; 
-     padding: 20px;
+     grid-template-rows: 1fr 1fr;
+     grid-gap: 20px; 
+     padding: 20px; 
+     min-height: calc(100vh - 2 * 20px); 
    }
 
-   footer {
-     grid-column: 1 / -1;
-     background-color: #061026;
-     color: white;
-     padding: 20px;
+   .left-column{
+     background-color: #ffffff;
+     padding: 20px; 
    }
-
-   .left-column {
-     background-color: #f0f0f0;
+   
+   .right-column{
+     background-color:#BAD6EB;
      padding: 20px;
-   }
+      }
 
-   .right-column {
-     background-color: #BAD6EB;
-     padding: 20px;
-   }
-
-
-     header,
-     footer {
-       grid-column: 1 / -1;
-     }
-
-     .left-column,
-     .right-column {
-       grid-column: 1 / -1;
-     }
-
+   @media screen and (max-width: 768px) {
      main {
        grid-template-columns: 1fr;
      }
-   
+
+     .left-column, .right-column {
+       grid-row: 1 / -1;
+     }
+   }
+
    .resume-text{
     text-align: center;
     padding: 20px;
