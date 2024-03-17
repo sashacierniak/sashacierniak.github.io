@@ -53,6 +53,14 @@ body {
      gap: 40px;
    }
 
+   @media screen and (max-width:768px) {
+     .container {
+          grid-template-columns: 100%;
+          padding: 5%;
+          gap: 5%;
+     }
+   }
+
    header, footer {
      background-color: #061026;
      color: white;
