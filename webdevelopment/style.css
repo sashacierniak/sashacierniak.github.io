@@ -103,28 +103,7 @@ body {
 }
 
 @media screen and (max-width:640px) {
-     .container{
-          flex-direction:row;
-          flex-wrap:wrap;
-     }
-     .left-column{
-          width: 100%;
-     }
-     .right-column{
-          width: 100%;
-     }
-     .header{
-          width:100%
-     }
-     .footer{
-          width:100%;
-     }
-     h1{
-          font-size: 2em;
-          font-family:"century gothic", sans-serif;
-     }
-     p{
-          font-size:1em;
-          font-family:"century gothic", sans-serif;
+     .container {
+          padding:10px;
      }
 }
