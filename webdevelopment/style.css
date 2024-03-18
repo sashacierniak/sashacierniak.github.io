@@ -53,14 +53,6 @@ body {
      gap: 40px;
    }
 
-   @media screen and (max-width:768px) {
-     .container {
-          grid-template-columns: 100%;
-          padding: 5%;
-          gap: 5%;
-     }
-   }
-
    header, footer {
      background-color: #061026;
      color: white;
@@ -108,4 +100,28 @@ body {
      padding: 20px;
      margin: 0px; 
 
+}
+
+@media screen and (max-width:640px) {
+     .container{
+          width:100%;
+     }
+     .left-column{
+          width: 100%;
+     }
+     .right-column{
+          width: 100%;
+     }
+     .header{
+          width:100%
+     }
+     .footer{
+          width:100%;
+     }
+     h1{
+          font-size: 20px;
+     }
+     p{
+          font-size:15px;
+     }
 }
