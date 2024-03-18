@@ -104,7 +104,8 @@ body {
 
 @media screen and (max-width:640px) {
      .container{
-          width:100%;
+          flex-direction:row;
+          flex-wrap:wrap;
      }
      .left-column{
           width: 100%;
@@ -119,9 +120,11 @@ body {
           width:100%;
      }
      h1{
-          font-size: 20px;
+          font-size: 2em;
+          font-family:"century gothic", sans-serif;
      }
      p{
-          font-size:15px;
+          font-size:1em;
+          font-family:"century gothic", sans-serif;
      }
 }
