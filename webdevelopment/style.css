@@ -17,11 +17,7 @@ main p:first-of-type::first-letter {
  }
 
  h1 {
-     margin: 10px;
-     padding: 7px;
-     width: 1350px;
-     border: 0px;
-     color:#4682B4
+     color:#ffffff;
 
  }
 
@@ -40,17 +36,15 @@ main p:first-of-type::first-letter {
      height:450px;
 
 }
-body {
+body, html {
      margin: 0;
      padding: 0;
-     box-sizing: border-box;
    }
 
-   .container {
+   .grid-container {
      display: grid;
-     grid-template-rows: auto 1fr auto;
-     min-height: 100vh;
-     gap: 40px;
+     grid-template-rows: auto 1fr;
+     grid-gap: 0px;
    }
 
    header, footer {
@@ -59,29 +53,42 @@ body {
      padding: 20px;
    }
 
-   main {
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     grid-gap: 20px; 
-     padding: 20px; 
-     min-height: calc(100vh - 2 * 20px); 
+   .top-row, .bottom-row {
+     padding: 20px;
    }
 
-   .left-column{
+   .top-row {
      background-color: #ffffff;
-     padding: 20px; 
-     height:100%;
    }
-   
-   .right-column{
-     background-color:#BAD6EB;
+
+   .bottom-row {
+     background-color: #BAD6EB;
+   }
+
+   .container {
+     display: grid;
+     grid-template-columns: auto 1fr;
+   }
+
+   .right-column, .left-column {
      padding: 20px;
-     height: 100%;
+   }
+
+   .left-column {
+     background-color:#ffffff;
+   }
+
+   .right-column {
+     background-color: #BAD6EB;
+   }
+
+@media only screen and (max-width:480px)
+{
+     .grid-container {
+          grid-template-columns: 1fr;
+     }
 }
 
-     .right-column, .left-column{
-       grid-row: 1/-1;
-     }
 
    .resume-text{
     text-align: center;
@@ -99,11 +106,4 @@ body {
      text-align: center;
      padding: 20px;
      margin: 0px; 
-
-}
-
-@media screen and (max-width:640px) {
-     .container {
-          padding:10px;
-     }
 }
