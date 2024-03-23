@@ -67,7 +67,15 @@ body {
   #hamburger{
     display:none;
   }
+ label {
+  display: none;
+  font-size: 20px;
+  width: 25px;
+ }
 
+ #toggle {
+  display: none;
+ }
 
   @media only screen and (max-width: 480px) {
     #hamburger {
@@ -75,10 +83,12 @@ body {
         padding: 0px;
         width: 100%;
         float: left;
-        font-size: 2em;
         background-color:#061026;
     }
-
+  #toggle:checked + nav ul {
+    display: block;
+  }
+  
   header {
     position: relative;
     display: block;
