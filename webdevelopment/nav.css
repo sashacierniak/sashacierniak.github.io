@@ -85,10 +85,7 @@ body {
         float: left;
         background-color:#061026;
     }
-  #toggle:checked + nav ul {
-    display: block;
-  }
-  
+
   header {
     position: relative;
     display: block;
@@ -130,15 +127,17 @@ body {
     }
 
   nav .lastMobile {
-    border-bottom:solid;
+    border-bottom: solid;
     }
     
   nav ul li ul.dropdown {
     display: none;
     }
+
     nav:hover  #mobileHide{
     display: none;
     }
+
   .dropdown {
     display: none;
     position: absolute;
@@ -146,5 +145,15 @@ body {
     left: 150px; 
     background-color: #34839f;
     padding: 0px; 
+    }
+
+    #toggle:checked + nav ul {
+      display: block;
+    }
+
+    label {
+      display: block;
+      padding-left: 20px;
+      width: 20px;
     }
   }
