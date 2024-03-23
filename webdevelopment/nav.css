@@ -148,7 +148,9 @@ body {
     }
 
     #toggle:checked + nav ul {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
     }
 
     label {
