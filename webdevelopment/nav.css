@@ -1,10 +1,10 @@
-
 .topnav{
   margin: 0 auto;
   display: flex;
+  padding: 10px;
   align-items: center;
   flex-direction: row;
-   font-family: "century gothic", sans-serif;
+  font-family: "century gothic", sans-serif;
 }
 .topnav li a:hover {
   color: #ffffff;
@@ -24,16 +24,16 @@ nav {
 }
 .topnav li {
   width: 125px;
-  padding: 15px 15px 15px 20px;
-  margin: 0px 20px 25px;
+  padding: 15px 15px 15px 15px;
   list-style-type: none;
-  text-align: right;
+  margin:  10px 10px;
+  text-align: center;
   position: relative;
 }
 .topnav li ul{
   display: none;
   position: absolute;
-  background-color: #061026;
+  background-color: #081F5C;
 }
 .topnav li a {
   display: block;
@@ -45,18 +45,19 @@ nav {
 .topnav li:hover ul {
   display: block;
 }
-nav ul::after {
+nav > ul::after {
   content: "";
   display: block;
   clear: both;
 }
 .topnav li ul li a:hover {
-  color: #ffffff;
+  color: #BAD6EB;
 }
 .topnav li ul li a {
   display: block;
   text-decoration: none;
-  color: #ffffff;
+  color: #ffffff
+  ;
 }
 
 label {
@@ -73,20 +74,31 @@ label {
       display: block;
       width: 20px;
       padding-left: 20px;
+      color:#ffffff;
   }
   .topnav {
-      width: 100%;
+      width: 50%;
       text-align: center;
       display: none;
+      flex-direction: column;
   }
   .topnav li ul {
       width: 100%;
       z-index: 1;
   }
   .topnav a {
-      display: block;
+      display: none;
   }
   #toggle:checked + .topnav {
       display: block;
   } 
+
+  .banner {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
 }
+
+
