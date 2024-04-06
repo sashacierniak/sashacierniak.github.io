@@ -148,12 +148,6 @@ body, html {
      page-break-before: avoid;
 }
    
-   h1{
-     @font-face {
-          font-family:serif;
-          src: url ("bebas_neue.ttf");
-     }
-   }
    nav, .banner, .video-resume, .resume-text, .image-box, i {
      display: none;
    }
