@@ -118,3 +118,73 @@ body, html {
      padding: 20px;
      margin: 0px; 
 }
+
+@media print {
+     * {
+          background: transparent !important;
+          color: #000 !important;
+          box-shadow: none !important;
+          text-shadow: none !important;
+          padding:0px;
+     }
+
+     .top-header{
+          margin-bottom: 0;
+          border:none;
+          text-align:center;
+          font-size: 3em;
+     }
+
+     @page {
+          margin: 1in;
+     }
+     
+   blockquote, p, footer {
+     color: black;
+     font-family:Georgia, 'Times New Roman', Times, serif;
+     padding: 0px;
+   }
+   footer{
+     page-break-before: avoid;
+}
+   
+   h1{
+     @font-face {
+          font-family:serif;
+          src: url ("bebas_neue.ttf");
+     }
+   }
+   nav, .banner, .video-resume, .resume-text, .image-box, i {
+     display: none;
+   }
+   .grid-container {
+     grid-template-columns: 1fr;
+}
+.container {
+     grid-template-columns: 1fr;
+}
+main p:first-of-type::first-letter {
+     font-size: 225%; 
+     color: black; 
+}
+}
+
+i:hover{
+     transform: scale(1.50);
+     transition: transform 0.5s ease;
+}
+
+footer{
+     background-image: url('images/back.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 150px;
+     display: grid;
+}
+
+.top-header {
+    width:100%;
+    max-width:960px; 
+    padding: 0px;
+    font:3em "bebas neue", static;
+}
