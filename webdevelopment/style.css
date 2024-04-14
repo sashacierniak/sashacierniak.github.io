@@ -92,6 +92,12 @@ body, html {
      grid-template-columns: auto 1fr;
      column-gap: 15px;
    }
+   #function, #innate, #adaptive, #disorders{
+     display: grid;
+     align-items:center;
+     grid-template-columns: auto 1fr;
+     column-gap: 15px;
+   }
    
 @media only screen and (max-width:640px)
 {
@@ -102,6 +108,11 @@ body, html {
           grid-template-columns: 1fr;
      }
      #section1, #section2, #section3, #section4{
+          grid-template-columns:1fr;
+          display:grid;
+          align-items: center;
+     }
+     #function, #innate, #adaptive, #disorders{
           grid-template-columns:1fr;
           display:grid;
           align-items: center;
