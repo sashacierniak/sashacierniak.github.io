@@ -31,21 +31,23 @@ Tested: March 2024
         <label for="toggle">&#9776;</label>
         <input type="checkbox" id="toggle">
         <ul class="topnav">
+            <li><img src="logo.png" id="logo" alt="Website logo of white germ"></li>
             <li><a href="index.html">Home</a></li>
             <li><a href ="about.html">About</a></li>
             <li><a href ="learn.html">Learn</a>
                 <ul>
-                    <li><a href="link1.html">Link 1</a></li>
-                    <li><a href="link2.html">Link 2</a></li>
-                    <li><a href="link3.html">Link 3</a></li>
+                    <li><a href="#section1" class="btn">Function</a></li>
+                    <li><a href="#section2" class="btn">Innate Immune</a></li>
+                    <li><a href="#section3" class="btn">Adaptive Immune</a></li>
+                    <li><a href="#section4" class="btn">Disorders</a></li>
                 </ul>
             <li><a href ="resources.html">Resources</a></li>
             <li><a href ="#contact.html">Contact</a></li>
     </ul>
     <img class="banner" src="cells.png" alt="Cell Banner">
-</nav>
+    </nav>
     <header>
-        <h1>Fundamentals of Biomedical Immunology</h1>
+        <h1 class="top-header">Fundamentals of Biomedical Immunology</h1>
     </header>
 
 <main class="grid-container">
@@ -55,8 +57,6 @@ Tested: March 2024
         For further resources to establish the content outlined in the biomedical immunology learning pages, there 
         are supplemental videos. <br><br>
     </p>
-    </div>
-    <div class="bottom-row">
     <h2>Resources</h2>
     <p> A Virus Attacks a Cell. (2017). [YouTube Video]. In <i>YouTube.</i> <a href="https://www.youtube.com/watch?v=jkNxmTrrZSk">https://www.youtube.com/watch?v=jkNxmTrrZSk</a><br><br>
 
@@ -101,14 +101,18 @@ Tested: March 2024
         <i>The immune system: Cells, tissues, function, and disease.</i> (n.d.). Www.medicalnewstoday.com.
         <a href="https://www.medicalnewstoday.com/articles/320101#immune-system-disorders">https://www.medicalnewstoday.com/articles/320101#immune-system-disorders</a><br><br></p>
 
-        <h2>Supplemental Videos</h2>
+    </div>
+    <div class="bottom-row" id="section2">
+    <div class="seg1">
          <div class="video-section">
              <iframe src="https://www.youtube.com/embed/bserR4ZDDAQ" allow="accelerometer; auto; encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>
             </div>
-
+    </div>
+    <div class="seg2">
          <div class="video-section">
             <iframe src="https://www.youtube.com/embed/_VhcZTGv0CU" allow="accelerometer; auto; encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>
         </div>
+    </div>
     </div>
 </main>
 <!--Footer-->

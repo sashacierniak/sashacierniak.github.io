@@ -31,13 +31,15 @@ Tested: March 2024
         <label for="toggle">&#9776;</label>
         <input type="checkbox" id="toggle">
         <ul class="topnav">
+            <li><img src="logo.png" id="logo" alt="Website logo of white germ"></li>
             <li><a href="index.html">Home</a></li>
             <li><a href ="about.html">About</a></li>
             <li><a href ="learn.html">Learn</a>
                 <ul>
-                    <li><a href="link1.html">Link 1</a></li>
-                    <li><a href="link2.html">Link 2</a></li>
-                    <li><a href="link3.html">Link 3</a></li>
+                    <li><a href="#section1" class="btn">Function</a></li>
+                    <li><a href="#section2" class="btn">Innate Immune</a></li>
+                    <li><a href="#section3" class="btn">Adaptive Immune</a></li>
+                    <li><a href="#section4" class="btn">Disorders</a></li>
                 </ul>
             <li><a href ="resources.html">Resources</a></li>
             <li><a href ="#contact.html">Contact</a></li>
@@ -45,10 +47,11 @@ Tested: March 2024
     <img class="banner" src="cells.png" alt="Cell Banner">
 </nav>
     <header>
-        <h1>Fundamentals of Biomedical Immunology</h1>
+        <h1 class="top-header">Fundamentals of Biomedical Immunology</h1>
     </header>
     <main class="grid-container">
-        <div class="top-row">
+        <div class="top-row" id="section1">
+        <div class="seg1">
             <h2>Immune System Components and Function</h2>
             <p>
                 The immune system is a dynamic and complex network of cells, organs, and tissues that are
@@ -59,11 +62,15 @@ Tested: March 2024
                 (Professional, n.d.). These “invaders” are called pathogens and can take the form of bacteria,
                 fungi, parasites, viruses, and cancer cells. The immune system is divided into two parts: the
                 innate and adaptive immune system. Together these systems coordinate to enact the first line
-                defense to invaders and develop specific immunity over time. 
-            </p>
+                defense to invaders and develop specific immunity over time. </p>
         </div>
-        <div class="bottom-row">
-            <h2>Innate Immune System </h2>
+        <div class="seg2">
+            <img class="learnpage" src="organs.png" alt="Human body system">
+        </div>
+        </div>
+        <div class="bottom-row" id="section2">
+        <div class="seg1">
+            <h2>Innate Immune System</h2>
             <p>Both the innate and adaptive immune system have cells that they recruit to the active site of an
                 infection or suspected pathogen. However, the innate immune system is best suited for rapid,
                 generalized responses that are seen through physical barriers, cellular components, and humoral
@@ -74,6 +81,42 @@ Tested: March 2024
                 pathogens and the complement system that enhances and directs immune responses by increasing
                 inflammation and directing immune responses (Newman, 2023). The innate immune not only
                 provides immediate protection but is integral in shaping subsequent adaptive immune responses. </p>
+        </div> 
+        <div class="seg2">
+            <img class="learnpage" src="innate.png" alt="Innate immune system diagram">
+        </div>
+        </div>
+        <div class="section-3" id="section3">
+        <div class="seg1">
+            <h2>Adaptive Immune System</h2>
+            <p>The adaptive immune system is defined by its ability to perform antigen-specific immune
+                responses. Unlike the innate response, the adaptive immune system can recognize, remember,
+                and offer defense to pathogens upon reinfection. Its immunological memory provides longlasting protection against harmful pathogens, further establishing its importance. The primary
+                cells that facilitate its immune response are lymphocytic B and T cells. B cells are specialized for
+                antibody production while T cells have a diverse set of functions such as direct attacks, immune
+                response coordination, and regulation activity. (Alberts, 2002). The specification of the adaptive
+                immune system is a crucial component in the body’s immunological defense. </p>
+        </div>
+        <div class="seg2">
+            <img class="learnpage" src="adaptive.png" alt="Adaptive immune system diagram">
+        </div>
+        </div>
+        <div class="section-4" id="section4">
+        <div class="seg1">
+            <h2>Disorders of the Immune System</h2>
+            <p>The immune system utilizes a multisystem approach to ensure that harmful pathogens that enter
+                the body are unable to infiltrate biological processes. However, in instances where the immune
+                system is unable to facilitate proper coordination, there is an increased susceptibility to
+                immunodeficiency disorders, autoimmune disorders, allergies, and the emergence of cancerous
+                cells. Malfunctions can arise due to genetic factors, medical conditions, and environmental
+                effects (Disorders of the Immune System, 2023). Depending on the disorder, the effects can
+                range from mild inconvenience to deleterious dysfunction of essential immune cells. By looking
+                at varying disorders and deficiencies such as HIV/AIDS, Lupus, and Eczema, their underlying
+                immune response and dysfunction can be analyzed. </p>
+        </div>
+        <div class="seg2">
+            <img class="learnpage" src="disorders.png" alt="Disorders of the immune system diagram">
+        </div>
         </div>
     </main>
 
