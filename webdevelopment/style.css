@@ -81,22 +81,23 @@ body, html {
    .right-column {
      background-color: #BAD6EB;
    }
-   .learnpage {
-     float:right;
-     width: 300px;
-     height: 200px;
-   }
+   
    #section1, #section2, #section3, #section4 {
      display: grid;
      align-items:center;
      grid-template-columns: auto 1fr;
      column-gap: 15px;
    }
-   #function, #innate, #adaptive, #disorders{
+   #innate, #adaptive, #function, #disorders{
      display: grid;
      align-items:center;
-     grid-template-columns: auto 1fr;
+     grid-template-columns: 1fr auto;
      column-gap: 15px;
+   }
+   .learnpage {
+     float:right;
+     width: 300px;
+     height: 200px;
    }
    
 @media only screen and (max-width:640px)
