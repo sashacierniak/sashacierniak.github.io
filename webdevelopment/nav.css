@@ -60,7 +60,7 @@ nav > ul::after {
   ;
 }
 
-label {
+.toggle label {
   display:none;
   font-size: 20px;
   width: 25px;
