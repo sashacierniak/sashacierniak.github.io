@@ -1,8 +1,9 @@
 
 .styled-link {
      padding: 5px;
-     background-color: #BAD6EB; 
-     border: 7px solid #081F5C;
+     background-color: #061026; 
+     border: 7px solid #061026;
+     color:#ffffff
 
 }
 
@@ -112,11 +113,54 @@ body, html {
           font-family: "century gothic", sans-serif;
           font-size: 15px;
      }
+     .video-section iframe {
+          width: 100%;
+          height: 400px;
+     }
+
+     #sashavr{
+          display: block;
+          width: 100%;
+          height:400px;
+          padding: 0px;
+          margin:0px;
+     }
+    
+}
+@media only screen and (max-width:1050px)
+{
+     .grid-container {
+          grid-template-columns: 1fr;
+     }
+     .container {
+          grid-template-columns: 1fr;
+     }
+     #section1, #section2, #section3, #section4, #section5{
+          grid-template-columns:1fr;
+          display:grid;
+          align-items: center;
+     }
+     #function, #innate, #adaptive, #disorders, #objectives{
+          grid-template-columns:1fr;
+          display:grid;
+          align-items: center;
+     }
+     body, html {
+          font-family: "century gothic", sans-serif;
+          font-size: 15px;
+     }
 
      .video-section iframe {
           width: 100%;
           height: 400px;
         
+     }
+     #sashavr{
+          display: block;
+          margin-left:auto;
+          margin-right: auto;
+          align-items:center;
+          padding-left: 10%;
      }
 }
 
