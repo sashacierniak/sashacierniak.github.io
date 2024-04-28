@@ -5,16 +5,6 @@
      border: 7px solid #081F5C;
 
 }
-main p:first-of-type::first-letter {
-     font-size: 225%; 
-     color: #081F5C; 
- }
-
- main p:not(:first-of-type)::before{
-     content:"";
-     display: inline-block;
-     width: 20px;
- }
 
  h1 {
      color:#ffffff;
@@ -53,7 +43,7 @@ body, html {
      padding: 20px;
    }
 
-   .top-row, .bottom-row, .section-3, .section-4 {
+   .top-row, .bottom-row, .section-3, .section-4, .section-5{
      padding: 20px;
    }
 
@@ -61,7 +51,7 @@ body, html {
      background-color: #ffffff;
    }
 
-   .bottom-row, .section-4 {
+   .bottom-row, .section-4, .section-5{
      background-color: #BAD6EB;
    }
 
@@ -82,13 +72,13 @@ body, html {
      background-color: #BAD6EB;
    }
    
-   #section1, #section2, #section3, #section4 {
+   #section1, #section2, #section3, #section4, #section5 {
      display: grid;
      align-items:center;
      grid-template-columns: auto 1fr;
      column-gap: 15px;
    }
-   #innate, #adaptive, #function, #disorders{
+   #innate, #adaptive, #function, #disorders, #objectives{
      display: grid;
      align-items:center;
      grid-template-columns: 1fr auto;
@@ -108,12 +98,12 @@ body, html {
      .container {
           grid-template-columns: 1fr;
      }
-     #section1, #section2, #section3, #section4{
+     #section1, #section2, #section3, #section4, #section5{
           grid-template-columns:1fr;
           display:grid;
           align-items: center;
      }
-     #function, #innate, #adaptive, #disorders{
+     #function, #innate, #adaptive, #disorders, #objectives{
           grid-template-columns:1fr;
           display:grid;
           align-items: center;
@@ -197,13 +187,6 @@ i:hover{
      transition: transform 0.5s ease;
 }
 
-footer{
-     background-image: url('images/backround.png');
-     background-size: cover;
-     background-repeat: no-repeat;
-     height: 150px;
-     display: grid;
-}
 
 .top-header {
     width:100%;
