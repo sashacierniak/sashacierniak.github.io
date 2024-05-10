@@ -71,6 +71,30 @@ Tested: March 2024
             apply the basic principles of immunology and the application of their cellular processes to
             immune system malfunctions such as immunodeficiencies, autoimmune disorders, and cancerous
             growths.</p><br>
+
+            <p> Total views: <span id="viewCount"></span></p>
+            <script>
+                // Function to retrieve and update the view count
+                function updateViewCount() {
+                    // Retrieve the current view count from local storage, or set to 0 if not present
+                    let count = localStorage.getItem('viewCount');
+                    if (!count) {
+                        count = 0;
+                    } else {
+                        count = parseInt(count);
+                    }
+        
+                    // Increment the view count and update the display
+                    count++;
+                    document.getElementById('viewCount').textContent = count;
+        
+                    // Save the updated view count back to local storage
+                    localStorage.setItem('viewCount', count.toString());
+                }
+        
+                // Call the updateViewCount function when the page loads
+                window.onload = updateViewCount;
+            </script>
         </div>
     </main>
 
